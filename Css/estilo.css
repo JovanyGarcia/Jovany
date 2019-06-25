@@ -1,0 +1,375 @@
+/*Este codigo puede ser reutilizable*/
+
+/*Globales*/ 
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    width: auto;
+	height: auto;
+}
+
+
+
+.Contenido{
+	max-width: 120rem;
+	margin: 0 auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
+    width: auto;
+	flex-direction: row;
+	position: relative;
+	height: 100%;
+}
+
+.Seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;    
+}
+
+.Boton1{
+    display: block;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    background: chocolate;
+}
+.Boton2{
+    display: block;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    background: LawnGreen;
+}
+
+.Boton3{
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    background: chocolate;
+    position: absolute;    
+    bottom: 2rem;  
+}
+
+/*Globales Titulos*/    
+.Encabezado-H3 {
+    text-align:center;
+    text-transform: capitalize;
+    font-weight: lighter;
+    display: block;
+    position: relative;
+    
+}
+
+.Encabezado-H4{
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+/*Header y Menu de navegacion*/
+.Side-Header{
+    background-image: url('../img/header.jpg');
+    min-height: 10rem; 
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+.Barra{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1.8rem;
+	align-items: center;
+}
+
+.Titulo{
+    color: white;
+    align-content: space-between;
+    position: absolute;
+    text-transform: capitalize;
+    bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.Navegador a{
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-right: 1rem; 
+}
+.Navegador :hover{
+    color: green; 
+}
+
+/*Mas sobre nosotros*/    
+.Iconos-contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+    
+.Icono{
+    text-align: center;
+    flex-basis: calc(33.3% - 1rem);    
+}
+
+/* Casas y Departamentos en Venta*/
+.Ventas-contenedor{
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: auto;
+    border: .1rem solid grey;
+    justify-content: space-evenly;
+   	height: auto; overflow: hidden;
+    padding: 1rem;
+}
+
+.Img-Ventas{
+    margin: -1rem;
+    box-sizing: border-box;
+}
+
+.Iconos-Cantidad{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Precios{
+    color: lawngreen;
+}
+
+/*Contactanos*/
+.Side-Main{
+    background-image: url('../img/encuentra.jpg');
+    min-height: 10rem; 
+    height: 50vh;
+    margin-top: 4rem;
+    background-position: center center;
+    background-size: cover;
+}
+
+.Main-Titulo{
+    text-transform: capitalize;
+    color: white;
+    align-content: space-between;
+    font-size: 1.5rem;
+    position: absolute;    
+    bottom: 4rem;    
+}
+
+.P-Min{
+    text-transform: lowercase;
+}
+
+/*Footer*/
+.Side-Footer{
+    background: black;
+    padding: 1rem;
+}
+
+.Side-Small{
+    color: white;
+    margin-right: 1rem;
+}
+
+/*Bloog y Testimoniales*/
+.Blog{
+    justify-content: space-evenly;
+    height: auto;
+    width: 65%;
+}
+
+.N-Blog{
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 1rem 12rem;
+}
+
+
+.Tex-Blog{
+    position: relative;
+    height: 14rem;
+    width: auto;
+    margin-right: 1rem;
+    text-align: justify;
+}
+
+.H4-Blog{
+    text-decoration: none;
+    color:black;
+}
+
+
+.Img-Blog img{
+    position: relative;
+    box-sizing: border-box;
+    height: 14rem;
+    width: auto;
+    float: left;
+    margin-right: 1rem;
+}
+
+span{
+    color: orange;
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+.Testi{
+    height: auto;
+    width: 45%;  
+}
+
+.Testimonial{
+    position: relative;
+    padding-left: 2rem;
+    padding-top: .1rem;
+    font-size: 1.6rem;
+    text-align: justify;
+    height: 13rem;
+    color: white;
+    background-color: LawnGreen;
+    border-radius: 1rem;
+    margin-top: 30%;
+}
+
+
+.linea-blog::before{
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: .3rem;
+    background-color: LawnGreen;
+    margin-top: 1rem;
+}
+
+
+.Cita{
+    margin-top: -2rem;
+    float: right;
+    padding-right:2rem;
+    font-size: 1.6rem;
+}
+.Comillas-testimonial::before{
+    content: '"';
+    position: absolute;
+    left: 2rem;
+    top: -.01rem;
+    font-size: 400%;
+}
+
+/* Mas sobre nosotros*/
+.Nosotros{
+    position: relative;
+    justify-content: space-evenly;
+    height: 25rem;
+    width: auto;
+}
+
+.Tex-Mas{
+    position: relative;
+    height: 14rem;
+    width: auto;
+    margin-right: 1rem;
+    text-align: justify;
+}
+
+
+.Img-Mas img{
+    position: relative;
+    box-sizing: border-box;
+    height: 20rem;
+    width: auto;
+    float: left;
+    margin-right: 1rem;
+}
+
+/*Contacto*/
+.M-Cont{
+    position: relative;
+    height: 25rem;
+    width: auto;
+    margin: 1rem 12rem;
+}
+
+.M-Cont img{
+    position: relative;
+    width: 100%;
+}
+
+.M-Contacto{
+    position: relative;
+    height: 25rem;
+    width: auto;
+    margin: 1rem 12rem;
+    border: solid gray;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.M-Contacto h3{
+    position: absolute;
+    text-transform: capitalize;
+    padding: auto;
+    background: white;
+    margin-top: -2rem;
+    margin-left: 1rem;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+label{
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+textarea{
+    max-height: 40%;
+    min-height: 40%;
+    height: 40%;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+}
+
+/*Anucio y Entrada*/
+
+.imagen-Entrada img{
+    height: 25rem;
+    width: 100%;
+}
+
+.Text-Entrada{
+    height: auto;
+    margin-bottom:  -1.5rem;
+    text-align: justify;
+}
+
+.Iconos-Anuncio{
+    flex-basis: calc(33.3% - 1rem);
+    display: flex;
+    position: relative;
+    margin-left: 70%;
+    margin-top: -7%;
+    justify-content: space-between;
+}
